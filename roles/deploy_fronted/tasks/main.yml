@@ -1,0 +1,5 @@
+---
+# tasks file for deploy_fronted
+
+- include: check_cont.yml
+- include: kill_cont.yml

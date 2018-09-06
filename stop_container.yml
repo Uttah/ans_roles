@@ -1,0 +1,9 @@
+---
+- name: docker stop for old container 
+  docker_container:
+    name: frontend-master 
+    #    image: front-master:1
+    state: absent 
+  when: deploy_frontend_check_cont_exist.stdout != ""
+  tags:
+    - killing

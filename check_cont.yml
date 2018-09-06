@@ -1,0 +1,6 @@
+---
+- name: docker ps for frontend container search
+  shell: "docker ps | awk '/front-master/{print $0}'"
+  register: deploy_frontend_check_cont_exist 
+  tags:
+    - checking
