@@ -1,6 +1,0 @@
----
-- name: Deploy frontend
-  hosts: mvp
-
-  roles:
-    - { role: deploy_fronted, when ansible_system == "Linux" }

@@ -1,4 +1,0 @@
----
-# defaults file for deploy_fronted
-
-deploy_frontend_check_cont_exist: none
